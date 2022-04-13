@@ -1,0 +1,22 @@
+"""
+Main script to execute
+"""
+
+
+configfile: "config/config.yaml"
+
+
+rule all:
+      input:
+          "images/PCA.pdf",
+          "images/Dendrogram_and_heatmap.pdf",
+          "images/dag.png"
+
+
+include: "rules/trimmer.smk"
+include: "rules/alignment.smk"
+include: "rules/decompiler.smk"
+include: "rules/genome_parser.smk"
+include: "rules/diff_expr.smk"
+include: "rules/visualize.smk"
+include: "rules/dag.smk"
