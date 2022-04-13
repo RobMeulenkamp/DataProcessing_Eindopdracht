@@ -11,7 +11,9 @@ For more background information look at the article. Link to
 
 ------------------------------------------------------------------------
 
-Overview pipeline: ![Overview pipeline](example_output/dag.png) \*\*\*
+Overview pipeline: ![Overview pipeline](example_output/dag.png) 
+
+------------------------------------------------------------------------
 
 # Computer ready for snakemake
 
