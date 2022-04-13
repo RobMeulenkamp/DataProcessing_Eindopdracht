@@ -1,0 +1,29 @@
+#configfile config.yaml
+
+samples: ['Eco_Ctrl1', 'Eco_Ctrl2', 'Eco_Exp1', 'Eco_Exp2']
+threads: 60
+
+dir_ref: referenceDB/
+name_ref: NC_000913.3
+
+ext:
+  raw: .fastq.gz
+  ref: .fa
+  anno: .ff3
+  new_anno: _CDS.gff
+
+
+trimmomatic:
+  adapter: trimmomatic/adapters/RiboSeq_adapter_as.fa
+  jar: trimmomatic/Trimmomatic-0.39/trimmomatic-0.39.jar
+  phred: -phred33
+  minlen: 12
+  maxmismatch: 2
+  pairend: 30
+  minscore: 6
+  slidwindow: 4
+  minqual: 15
+
+
+bowtiemode: --local
+  
