@@ -9,7 +9,7 @@ name_ref: NC_000913.3
 ext:
   raw: .fastq.gz
   ref: .fa
-  anno: .ff3
+  anno: .gff3
   new_anno: _CDS.gff
 
 
