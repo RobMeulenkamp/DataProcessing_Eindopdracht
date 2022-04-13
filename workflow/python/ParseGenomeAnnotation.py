@@ -41,6 +41,14 @@ def Sweep_and_output(input_list, accession, output_file):
     print ('%s CDSs remained' %out_count)
     output.close()
     return 0
+
+
+def Get_ID(attribute):
+    attributes = attribute.split(';')
+    attributes_dic = {}
+    for i in attributes:
+        attributes_dic[i.split('=')[0]] = i.split('=')[1]
+    return attributes_dic['locus_tag']
     
     
 def main():      
