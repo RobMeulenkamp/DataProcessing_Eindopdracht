@@ -24,15 +24,16 @@ Required files:
 -   Download raw sequencing files (.fastq.gz).  
     The number of files depends on your experiment set-up.  
     Locate the desired input files in the raw_reads/ directory.  
+    [previous studies](https://www.ebi.ac.uk/ena/browser/view/PRJEB21199?show=reads)
 
 -   Download and locate the adapter sequence in trommomatic/adapters/
     directory. (RiboSeq_adapter.fa)
 
 -   Download and locate the reference genome sequence file in
-    referenceDB/ directory. (NC000913.3.fa)
+    referenceDB/ directory. (NC000913.3.fa) Look for reference genome at [NCBI](https://www.ncbi.nlm.nih.gov/nuccore)
 
 -   Find the genome annotation file and download the file in the
-    referenceDB/ directory. (NC_000913.3.gff3)
+    referenceDB/ directory. (NC_000913.3.gff3) Search for genome annotation file at [NCBI](https://www.ncbi.nlm.nih.gov/nuccore)
 
 -   The last required file is a design of the experiment and place this
     file in referenceDB/ directory. Fileformat must be in txt.  
